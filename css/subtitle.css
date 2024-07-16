@@ -1,0 +1,134 @@
+div#subtitle {
+  height: auto;
+}
+div#subtitle .wrap {
+  max-width: 1907px;
+  height: auto;
+  margin: 0;
+  margin-bottom: 200px;
+}
+div#subtitle .wrap>div{
+  width: 100%;
+  height: auto;
+}
+div#subtitle .wrap>div>div{
+  width: 100%;
+  height: auto;
+}
+div#subtitle button{
+  position: static;
+  transform: translate(0,0);
+}
+div#subtitle button.slick-arrow{
+  width: 10px;
+  height: 19px;
+}
+div#subtitle button.slick-arrow::before{
+  content: "";
+  display: block;
+  width: 10px;
+  height: 19px;
+  background-repeat: no-repeat;
+}
+div#subtitle .wbutton{
+  position: absolute;
+  z-index: 1;
+  width:  120px !important;
+  height: 40px !important;
+  background-color: rgba(225, 225, 225,0.7);
+  border-radius: 15px;
+  left: calc((100% / 2) - 60px);
+  bottom: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+div#subtitle .slick-prev{
+  left: 25px;
+  z-index: 1;
+  background-repeat: no-repeat;
+}
+div#subtitle .btn_pause{
+    background:url('../img/pause.svg') no-repeat;
+    width: 24px; 
+    height: 24px;
+    text-indent: -9999px;
+    border:none;
+    cursor: pointer;
+    outline: none;
+    background-size: contain;
+    order: 2;
+}
+div#subtitle .btn_pause.on{
+    background: url('../img/play.svg') no-repeat;
+    width: 24px; height: 24px;
+    text-indent: -9999px;
+    border:none;
+    cursor: pointer;
+    outline: none;
+    background-size: contain;
+}
+div#subtitle .slick-prev::before{
+  background-image: url(../img/arrowTL.png);
+}
+div#subtitle .slick-next{
+  background-repeat: no-repeat;
+  order: 3;
+}
+div#subtitle .slick-next::before{
+  background-image: url(../img/arrowTR.png);
+}
+div#subtitle .wrap img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+div#subtitle .wrap .slick-dots{
+  bottom: -150px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div#subtitle .wrap .slick-dots button::before{
+  position: static;
+  width: fit-content;
+  height: auto;
+  line-height: initial;
+}
+div#subtitle .slick-dots button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: initial;
+}
+div#subtitle .slick-dots li button::before{
+  color: white;
+  font-size: 8px;
+  transition: 0.5s;
+}
+div#subtitle .slick-dots li.slick-active button{
+  border-radius: 50%;
+  border: 1px solid white;
+}
+div#subtitle .slick-dots li.slick-active button::before{
+  
+}
+.slick-dots li{
+}
+#subtitle .slick-dots li{
+  width: 130px;
+  height: 80px;
+  transition: 1s;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px aliceblue;
+}
+#subtitle .slick-dots li img{
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px aliceblue;
+}
+#subtitle .slick-dots li.slick-active{
+  width: calc(130px *1.2);
+  height: calc(80px *1.2);
+}
